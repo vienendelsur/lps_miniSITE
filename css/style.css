@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS document */
+
+/* ma première feuille de style externe */
+
+/* des styles simples pour visualiser les div */
+
+.fond_orange {
+    background: orange;
+}
+.fond_rouge {
+    background: red;
+}
+.fond_vert {
+    background: greenyellow;
+}
+.fond_bleu {
+    background: lightblue;
+}
+.fond_gris {
+    background: lightgrey;
+}
+
+/* les styles de la page */
+
+body {
+    background-color:olivedrab;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
