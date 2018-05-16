@@ -1,9 +1,8 @@
 @charset "utf-8";
 /* CSS document */
-
 /* ma première feuille de style externe */
 
-/* des styles simples pour visualiser les div */
+/* des styles simples pour de fonds de couleur */
 
 .fond_orange {
     background: orange;
@@ -24,6 +23,43 @@
 /* les styles de la page */
 
 body {
+    margin: auto; /* margin c'est la marge extérieure d'un élément */
     background-color:olivedrab;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* l'emballage de toute la page */
+#wrapper {
+    width: 1000px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* le haut de page */
+header  {
+    background: url(../img/panorama.jpg)  center top no-repeat;
+    height: 400px;  /* hauteur de l'élément */
+    border: 2px solid white;
+}
+/* la côté de la page */
+aside {
+    /* largeur de l'élément */
+    width: 280px;
+    float: left;
+    padding: 10px;
+}
+/* le contenu principal */
+#main {
+    width: 680px;
+    float: right;
+    padding: 10px;
+}
+/* la classe pour tout remettre dans le flux normal */
+.clear {
+    clear: both;
+}
+/* le pied de page */
+footer {
+    height: 236px;
+    border: 2px solid white;
 }
