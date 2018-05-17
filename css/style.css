@@ -63,3 +63,43 @@ footer {
     height: 236px;
     border: 2px solid white;
 }
+
+/* le formulaire sur le CSS */
+
+form {
+    background: whitesmoke;
+    padding: 10px;
+    width: 80%;
+}
+fieldset{
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid olivedrab;
+    width: 80%;
+}
+legend {
+    font-weight: 800;
+    color: olive;
+}
+label {
+    background-color: orange;
+    color: white;
+    margin-top: 20px;
+    /* display: block permet d'aller à la ligne automatiquement */
+    display: block;
+    width: 300px;
+}
+label.inline {
+    /* pour styler tous les labels qui ont la classe .inline */
+    display:inline;
+    margin-right: 50px;
+}
+input, textarea, select {
+    /* pour styler plusieurs éléments et leur donner des attributs communs */
+    border: 1px solid olivedrab;
+    padding: 3px;
+    margin-top: 10px;
+}
+select {
+    margin-top: 5px;
+}
