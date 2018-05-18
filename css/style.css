@@ -8,7 +8,7 @@
     background: orange;
 }
 .fond_rouge {
-    background: red;
+    background: #EF1314;
 }
 .fond_vert {
     background: greenyellow;
@@ -24,22 +24,25 @@
 
 body {
     margin: auto; /* margin c'est la marge extérieure d'un élément */
-    background-color:olivedrab;
+    /* background-color:olivedrab; */
+    background: linear-gradient( whitesmoke, #74A2C2);
+    /* background: repeating-linear-gradient(red, yellow 10%, green 20%); */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* l'emballage de toute la page */
 #wrapper {
-    width: 1000px;
+    width: 1200px;
     margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
 }
 /* le haut de page */
 header  {
-    background: url(../img/panorama.jpg)  center top no-repeat;
-    height: 400px;  /* hauteur de l'élément */
-    border: 2px solid white;
+    /* background-image: url(../img/panorama.jpg)  center top no-repeat; */
+    background: url(../img/panorama.jpg) center top no-repeat, linear-gradient(lightblue, whitesmoke);
+    height: 370px;  /* hauteur de l'élément */
+    /* border: 2px solid white; */
 }
 /* la côté de la page */
 aside {
@@ -48,9 +51,13 @@ aside {
     float: left;
     padding: 10px;
 }
+nav  {
+    
+    /* background: radial-gradient( black, yellow); */
+}
 /* le contenu principal */
 #main {
-    width: 680px;
+    width: 880px;
     float: right;
     padding: 10px;
 }
@@ -60,8 +67,9 @@ aside {
 }
 /* le pied de page */
 footer {
-    height: 236px;
-    border: 2px solid white;
+    height: 120px;
+    /* border: 2px solid white; */
+    margin-bottom: 10px;
 }
 
 /* le formulaire sur le CSS */
@@ -120,11 +128,20 @@ tr:hover {/* une pseudo-class :hover au passage du curseur*/
 
 caption, th, tfoot {
     text-align: left;
-    background: orangered;
+    background: #C05D46;
     color: whitesmoke;
     padding: 10px;
 }
-caption {
-    caption-side: top;
-    text-transform: uppercase;
+caption {caption-side:top;text-transform:uppercase;}
+
+/* diférents styles de bordure */
+
+.filetgauche {/* un filet à gauche du bloc */
+    border-left: 3px solid blue;
+}
+.cartouche {/* un essai de bordure avec des coins arrondis */
+    border: 2px solid orange;
+    border-radius: 45px;
+    padding: 20px;
+    background: olive;
 }
