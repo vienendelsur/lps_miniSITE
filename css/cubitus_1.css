@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS document */
+
+body {
+    /* margin: 0 auto; */
+    background-color: antiquewhite;
+}
+/* pour alterner les couleurs des div  */
+.rose {
+    background-color: pink;
+}
+.corail {
+    background-color: lightcoral; 
+}
+/* les styles communs aux div de la page */
+.c1, .c2 {
+    height: 10em;
+    width: 10em;
+    float: left;
+    border: 0.2em solid white;
+    /* border-radius: 20%; */
+    border-radius: 10% 5% 40% 0%;
+    text-align: center;
+    color: white;
+}
+.clear {
+    clear: both;
+}

@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS document */
+
+body {
+    /* margin: 0 auto; */
+    background-color: antiquewhite;
+}
+/* pour alterner les couleurs des div  */
+.vert {
+    background-color: green;
+    border-radius: 5% 10% 20% 40%; /* top right bottom left */
+}
+.aqua {
+    background-color: aqua; 
+}
+
+/* les styles communs aux div de la page */
+.c1, .c2, .c3, .c4, .vide {
+    height: 10em;
+    width: 10em;
+    /* float: left; Si décommenter, décommenté également l'élément .clear */
+    display: inline-block;/* Permet le float sans l'ajout de la propriété clear */
+    border: 0.2em solid white;
+    border-radius: 10% 5% 40% 0%;
+    text-align: center;
+    color: white;
+}
+
+/* .clear {
+    clear: both;
+} */
