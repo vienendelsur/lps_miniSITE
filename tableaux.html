@@ -7,6 +7,14 @@
 <title>miniSITE : accueil</title>
 <!-- la feuille de style externe avec une balise link-->
 <link href="css/style.css" rel="stylesheet">
+<style>
+     
+/* là je cible dans la div id nchild tous les deux enfants */
+        #nchild tr:nth-child(2n){
+            background: rgb(85, 177, 189);
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
 <div id="wrapper">
@@ -18,7 +26,7 @@
 <nav> <!-- la navigation de la page -->
     <h2>la navigation</h2>
     <ul>
-            <li><img src="img/googleearth-logo.gif" alt="logo"><a href="index.html" title="MiniSite : accueil">MiniSITE</a></li>
+            <li><a href="index.html" title="MiniSite : accueil">MiniSITE</a></li>
             <li><a href="photos.html" title="MiniSite : des photos">Photos</a></li>
             <li><a href="textes.html" title="MiniSite : des textes">Textes</a></li>
             <li><a href="formulaires.html" title="MiniSite : des formulaires">Formulaires</a></li>
@@ -138,6 +146,24 @@
         <td colspan="3">Total : 320 €</td><!-- pour fusionner deux cellules -->
     </tr>
 </tbody>
+</table>
+<hr>
+<table id="nchild">
+    <tr>
+        <td>coucou</td>
+        <td>coucou</td>
+        <td>coucou</td>
+    </tr>
+    <tr>
+        <td>coucou</td>
+        <td>coucou</td>
+        <td>coucou</td>
+    </tr>
+    <tr>
+        <td>coucou</td>
+        <td>coucou</td>
+        <td>coucou</td>
+    </tr>
 </table>
 </div><!-- fermeture de la div main -->
 <!-- cette div permet de reprendre le flux normal -->

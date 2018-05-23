@@ -29,7 +29,6 @@ body {
     /* background: repeating-linear-gradient(red, yellow 10%, green 20%); */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 /* l'emballage de toute la page */
 #wrapper {
     width: 1200px;
@@ -44,6 +43,25 @@ header  {
     height: 370px;  /* hauteur de l'élément */
     /* border: 2px solid white; */
 }
+
+header h1 {
+    background-color: white;
+    text-transform: uppercase;
+    width: 20%;
+    text-align: center;
+    margin-left: 10%;
+}
+header h1 a {
+    text-decoration: none;
+    color: #333;
+}
+header h1 a:hover {
+    /* text-decoration: underline; */
+    background-color: #333;
+    color: white;
+
+}
+
 /* la côté de la page */
 aside {
     /* largeur de l'élément */
@@ -51,12 +69,39 @@ aside {
     float: left;
     padding: 10px;
 }
+/* la navigation et les styles des liens */
+
 nav  {
-    
-    /* background: radial-gradient( black, yellow); */
+/* background: linear-gradient( black, yellow); */
+}
+/* les liens ne sont plus soulignés par défaut */
+nav a {
+    text-decoration: none;
+}
+/* les pseudos class */
+
+/* quand le lien n'est pas visité */
+nav a:link {
+    color: orange;
+}
+/* quand le lien a été visité */
+nav a:visited {
+    color: lightseagreen;
+}
+/* au survol de la souris je mets un fond de couleur et je souligne les liens */
+nav a:hover {
+    color: white;
+    /* background: orange; */
+    text-decoration: underline;
+}
+
+nav ul li {
+    list-style-type: none;
+    /* list-style-image: url('../img/globe_fleche.png'); */
 }
 /* le contenu principal */
 #main {
+    background-color: orange;
     width: 880px;
     float: right;
     padding: 10px;
@@ -71,9 +116,7 @@ footer {
     /* border: 2px solid white; */
     margin-bottom: 10px;
 }
-
 /* le formulaire sur le CSS */
-
 form {
     background: whitesmoke;
     padding: 10px;
@@ -111,7 +154,6 @@ input, textarea, select {
 select {
     margin-top: 5px;
 }
-
 /* le tableau */
 table {
     border-collapse: collapse; /* fusionne les bordures stylées ci-après */
@@ -133,7 +175,6 @@ caption, th, tfoot {
     padding: 10px;
 }
 caption {caption-side:top;text-transform:uppercase;}
-
 /* diférents styles de bordure */
 
 .filetgauche {/* un filet à gauche du bloc */
@@ -144,4 +185,14 @@ caption {caption-side:top;text-transform:uppercase;}
     border-radius: 45px;
     padding: 20px;
     background: olive;
+}
+/* ici pour l'astuce au survol dans la page texte  */
+#survol p {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+
+#survol:hover p {
+    display: block;
 }

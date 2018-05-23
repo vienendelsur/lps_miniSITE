@@ -5,8 +5,24 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <title>miniSITE : des textes</title>
-        <!-- la feuille de style externe avec une balise link-->
         <link href="css/style.css" rel="stylesheet">
+        <style>
+        
+        /* les pseudo-class :first-child */
+            article li:first-child {
+                background: lightblue;
+            }
+/* ici je cible le li 6ème enfant de article */
+            article li:nth-child(6) {
+                background: olive;
+                color: white;
+            }
+/* là je cible dans la div id nchild tous les deux enfants */
+            #nchild li:nth-child(2n){
+                background: #000;
+                color: #fff;
+            }
+        </style>
     </head>
     <body>
         <div id="wrapper">
@@ -18,7 +34,7 @@
                     <nav> <!-- la navigation de la page -->
                         <h2>la navigation</h2>
                         <ul>
-                                <li><img src="img/googleearth-logo.gif" alt="logo"><a href="index.html" title="MiniSite : accueil">MiniSITE</a></li>
+                                <li><a href="index.html" title="MiniSite : accueil">MiniSITE</a></li>
                                 <li><a href="photos.html" title="MiniSite : des photos">Photos</a></li>
                                 <li><a href="textes.html" title="MiniSite : des textes">Textes</a></li>
                                 <li><a href="formulaires.html" title="MiniSite : des formulaires">Formulaires</a></li>
@@ -35,20 +51,62 @@
                                 </ul>
                         </nav>
             </aside>
-            <div id="main" class="fond_orange"><!-- contenu principal -->
-                <article><!-- un article avec son h2 -->
-                    <h1>ici je vais mettre apèrs tout seul des textes avec du HTML qui va bien</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, voluptate voluptates, quasi alias rerum eaque perferendis, explicabo voluptatem at velit ipsa blanditiis quisquam error saepe. </p>
-                    <p class="fond_gris">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, voluptate voluptates, quasi alias rerum eaque perferendis, explicabo voluptatem at velit ipsa blanditiis quisquam error saepe. Assumenda  debitis vero deserunt.</p>
-                    <!-- je joue avec les class -->
-                    <p class="fond_gris">Je suis le <span class="fond_rouge">plus fort en code !</span></p>
-                    <p>Lorem ipsum, doloectetur adipisicing elit. Aliquid, voluptate voluptates, quasi alias rerum eaque perferendis, explicabo voluptatem at velit ipsa blanditiis quisquam error saepe. Assumenda eaque debitis vero deserunt.</p>
+            <div id="main"><!-- contenu principal -->
+                <article><!-- un article avec son h1 -->
+                    <div>
+                        <h1>ici je vais mettre apèrs tout seul des textes avec du HTML qui va bien</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, voluptate voluptates, quasi alias rerum eaque perferendis, explicabo voluptatem at velit ipsa blanditiis quisquam error saepe. </p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, voluptate voluptates, quasi alias rerum eaque perferendis, explicabo voluptatem at velit ipsa blanditiis quisquam error saepe. </p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, voluptate voluptates, quasi alias rerum eaque perferendis, explicabo voluptatem at velit ipsa blanditiis quisquam error saepe. </p>
+                        <p class="fond_gris">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, voluptate voluptates, quasi alias rerum eaque perferendis, explicabo voluptatem at velit ipsa blanditiis quisquam error saepe. Assumenda  debitis vero deserunt.</p>
+                        <!-- je joue avec les class -->
+                        <p class="fond_gris">Je suis le <span class="fond_rouge">plus fort en code !</span></p>
+                        <p>Lorem ipsum, doloectetur adipisicing elit. Aliquid, voluptate voluptates, quasi alias rerum eaque perferendis, explicabo voluptatem at velit ipsa blanditiis quisquam error saepe. Assumenda eaque debitis vero deserunt.</p>
+                    </div>
+                </article>
+                <h3>Une astuce avec un hover</h3>
+                <div id="survol">
+                    Survolez cette ligne pour me faire apparaître
+                    <p>Coucou je suis là !</p>
+                </div>
+                <article>
+                    <h1>Une liste de chose à faire</h1>
+                    <ul>
+                        <li>Machine à faire</li>   
+                        <li>Vélo</li>
+                        <li>Boire une bière</li>
+                        <li>passer l'aspi</li>   
+                        <li>Faire le dîner</li>
+                        <li>Boire une tisane</li>
+                    </ul>
+                </article>
+                <article id="nchild">
+                    <h1>Une liste de chose à pas faire</h1>
+                    <ul>
+                        <li>Tuer mon voisin</li>   
+                        <li>Vélo</li>
+                        <li>Boire une bière</li>
+                        <li>passer l'aspi</li>   
+                        <li>Faire le dîner</li>
+                        <li>Boire une tisane</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h1>Ce que je fais, dans l'ordre quand j'arrive au boulot</h1>
+                    <ol>
+                        <li>Ouvrir</li>   
+                        <li>Aérer</li>
+                        <li>Allumer l'ordi</li>
+                        <li>Dire bonjour</li>   
+                        <li>faire le café</li>
+                        <!-- <li>Allumer l'ordi</li> -->
+                    </ol>
                 </article>
             </div><!-- fermeture de la div main -->
             <!-- cette div permet de reprendre le flux normal -->
             <div class="clear"></div>
-            <footer class="fond_bleu"><!-- le pied de page -->
-                Pied de page</footer>
+            <footer class="fond_bleu"><!-- le pied de page -->Pied de page</footer>
         </div><!-- fermeture wrapper -->
     </body>
 </html>
