@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zoning</title>
+    <style>
+        #conteneur {
+            width: 1000px;
+            background: aquamarine;
+            color: blue;
+            margin: 0 auto;
+        }
+
+        header {
+            height: 200px;
+            background: rosybrown;
+        }
+
+        .div_un, .div_deux, .div_trois, .div_quatre {
+            float: left;
+            width: 496px;
+            height: 496px;
+            border: 2px solid #000;
+        }
+
+        .div_un {
+            background: rgb(230, 28, 28);
+        }
+        .div_deux {
+            background: rgb(13, 234, 241);
+        }
+        .div_trois {
+            background: rgb(75, 10, 228);
+        } 
+        .div_quatre {
+            background: rgb(10, 230, 101);
+        }
+        .un, .deux, .trois, .quatre {
+            float: left;
+            width: 244px;
+            height: 244px;
+            border: 2px solid #000;
+        }
+        .rt {
+            float: left;
+            width: 118px;
+            height: 118px;
+            border: 2px solid #000;
+			background: url(../img/panora) center no-repeat;
+        }
+        footer{
+            border: 2px solid #000;
+            background: rgb(230, 140, 6);
+            /* text-align: justify; */
+        }
+        footer p {
+            text-align: justify;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteneur">
+        <header>
+            <p>
+                Zone header
+            </p>
+        </header>
+
+        <nav>
+            Nav
+        </nav>
+
+        <section>
+            <div class="div_un">
+                <div class="un">
+                    <div class="rt"></div>
+                    <div class="rt"></div>
+                    <div class="rt"></div>
+                    <div class="rt"></div>
+                </div>
+                <div class="deux">
+                    <div class="rt"></div>
+                    <div class="rt"></div>
+                    <div class="rt"></div>
+                    <div class="rt"></div>
+                </div>
+                <div class="trois">
+                    <div class="rt"></div>
+                    <div class="rt"></div>
+                    <div class="rt"></div>
+                    <div class="rt"></div>
+                </div>
+                <div class="quatre">
+                    <div class="rt"></div>
+                    <div class="rt"></div>
+                    <div class="rt"></div>
+                    <div class="rt"></div>
+                </div>
+            </div>
+
+            <div class="div_deux">
+                <div class="un">A</div>
+                <div class="deux">A</div>
+                <div class="trois">A</div>
+                <div class="quatre">A</div>
+            </div>
+
+            <div class="div_trois">
+                <div class="un">A</div>
+                <div class="deux">A</div>
+                <div class="trois">A</div>
+                <div class="quatre">A</div>
+            </div>
+
+            <div class="div_quatre">
+                <div class="un">A</div>
+                <div class="deux">A</div>
+                <div class="trois">A</div>
+                <div class="quatre">A</div>
+            </div>            
+        </section>
+
+        <div class="clear"></div>
+
+        <footer>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis exercitationem eum cumque dolor eius, ex doloribus eos quae veniam consequatur est ducimus voluptatibus aliquam! Possimus quia iusto officia nobis aspernatur?
+            </p>
+        </footer>
+    </div><!-- Fin div conteneur -->
+</body>
+</html>
