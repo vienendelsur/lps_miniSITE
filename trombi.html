@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #conteneur{
+            width: 1000px;
+            margin: 0 auto;
+            background: pink;
+        }
+
+        .entete{
+            color: #fff;
+            height: 250px;
+            text-align: center;
+            background: #111111;
+            font-family: fantasy;
+        }
+
+        .entete h1{
+            /* border: 1px dashed rgb(17, 240, 229); */
+            padding-top: 50px;
+            line-height: 50px
+        }
+
+        nav{
+            height: 50px;
+            background: #d1df0d;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        .grandCarre{
+            float: left;
+            border: 1px solid #000;
+            width: 496px;
+            height: 496px;
+        }
+
+        .image{
+            background: url('img/panora.jpg') no-repeat center;
+            background-size: cover;/* Permet de couvrir tout l'espace de l'élément parent, peut avoir comme valeurs: cover, contain, auto ou une valeur en px. Voir https://developer.mozilla.org/fr/docs/Web/CSS/background-size) */
+        }
+
+        .carreMoyen{
+            float: left;
+            /* border: 1px solid #000; */
+            width: 246px;
+            height: 246px;
+            background-size: cover;/* Permet de couvrir tous l'espace de l'élément parent */
+            background: url(img/venise02.jpg) no-repeat center;
+        }
+
+        .carreMini{
+            float: left;
+            width: 120px;
+            height: 120px;
+            border: 1px solid #000;
+            background: url(img/panora.jpg) no-repeat center;
+        }
+
+        .da{
+            float: left;
+            width: 496px;
+            height: 165px;
+        }
+
+        .rectangle{
+            float: left;
+            width: 496px;
+            height: 165px;
+            background: url(img/panora.jpg) no-repeat center;
+        }
+
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteneur">
+        <header class="entete"><h1>Trombi</h1></header>
+        <nav><p>NAV</p></nav>
+        <section class="section">
+            <div class="grandCarre image"></div><!-- grand Carré un -->
+
+            <div class="grandCarre"><!-- grand Carré deux -->
+                <div class="carreMoyen"></div>
+                <div class="carreMoyen"></div>
+                <div class="carreMoyen"></div>
+                <div class="carreMoyen"></div>
+            </div>
+
+            <div class="grandCarre"><!-- grand Carré trois -->
+                <div class="carreMoyen">
+                    <div class="carreMini"></div>
+                    <div class="carreMini"></div>
+                    <div class="carreMini"></div>
+                    <div class="carreMini"></div>
+                </div><!-- Fin carreMoyen -->
+
+                <div class="carreMoyen">
+                    <div class="carreMini"></div>
+                    <div class="carreMini"></div>
+                    <div class="carreMini"></div>
+                    <div class="carreMini"></div>      
+                </div><!-- Fin carreMoyen -->
+                <div class="carreMoyen">
+                    <div class="carreMini"></div>
+                    <div class="carreMini"></div>
+                    <div class="carreMini"></div>
+                    <div class="carreMini"></div>
+                </div><!-- Fin carreMoyen -->
+
+                <div class="carreMoyen">
+                    <div class="carreMini"></div>
+                    <div class="carreMini"></div>
+                    <div class="carreMini"></div>
+                    <div class="carreMini"></div>
+                </div><!-- Fin carreMoyen -->
+            </div>
+
+            <div class="grandCarre"><!-- grand Carré quatre -->
+                <!-- <div class="da">
+                    <img src="img/panora.jpg" alt="" width="496px" height="165px">
+                </div>
+                <div class="da">
+                    <img src="img/panora.jpg" alt="" width="496px" height="165px">
+                </div>
+                <div class="da">
+                    <img src="img/panora.jpg" alt="" width="496px" height="165px">
+                </div>             -->
+                <div class="carreMoyen"></div>
+                <div class="carreMoyen"></div>
+                <div class="rectangle"></div>                
+            </div><!-- Carré quatre -->
+        </section>
+        <div class="clear"></div>
+        <footer>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In delectus eum, quia ipsa nam rerum exercitationem iusto. Expedita atque, quo facere totam optio nobis vero omnis ex nam. Ea, officiis.</p>
+        </footer>
+    </div>
+</body>
+</html>

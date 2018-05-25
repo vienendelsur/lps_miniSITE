@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS document pour le fichier trasition et iframe */
+
+body {
+    background: lightgoldenrodyellow;
+}
+
+.couleur_une {
+    background: lightblue;
+}
+
+.couleur_deux {
+    background: lightgreen;
+}
+
+.change {
+    border: thin solid white;
+}
