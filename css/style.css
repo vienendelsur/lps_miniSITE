@@ -20,6 +20,7 @@
     background: lightgrey;
 }
 
+
 /* les styles de la page */
 
 body {
@@ -60,6 +61,9 @@ header h1 a:hover {
     background-color: #333;
     color: white;
 
+}
+.texte_droite {
+    text-align: right;
 }
 
 /* la côté de la page */

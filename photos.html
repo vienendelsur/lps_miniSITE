@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie-edge">
         <title>miniSITE : des photos</title>
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <!-- la feuille de style externe avec une balise link-->
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -36,6 +38,10 @@
                         </nav>
             </aside>
             <div id="main" class="fond_orange"><!-- contenu principal -->
+                    <p class="texte_droite">
+                        <a id="haut_de_page"></a>
+                        <a href="#bas_de_page" title="MiniSite : le bas de la page"><i class="far fa-arrow-alt-circle-down"></i></a>
+                    </p>
                 <article><!-- un article avec son h2 -->
                     <h1>Des images travaillées avec GIMP 2.8</h1>
                     <img src="img/venise02.jpg" alt="une photo de venise">
@@ -45,6 +51,22 @@
                     <p class="fond_gris">Je suis le <span class="fond_rouge">plus fort en code !</span></p>
                     <p>Lorem ipsum, doloectetur adipisicing elit. Aliquid, voluptate voluptates, quasi alias rerum eaque perferendis, explicabo voluptatem at velit ipsa blanditiis quisquam error saepe. Assumenda eaque debitis vero deserunt.</p>
                 </article>
+                <article>
+                    <h2>Une image de chat</h2>
+                    <img src="img/siamois.jpg" alt="un chat siamois">
+                </article>
+                <article>
+                    <h2>Un chemin de montagne</h2>
+                    <img src="https://www.yunnan-roads.fr/wp-content/uploads/2016/11/circuit_trek-montagne-dragon-jade-lijiang-shangri-la-10.jpg" alt="un globe">
+                </article>
+                <article>
+                    <h2>Pleine lune</h2>
+                    <img src="https://apod.nasa.gov/apod/image/1803/MoonTree_Houck_1799.jpg" alt="pleine lune photo nasa" width="179px" height="224px">
+                </article>
+                <p class="texte_droite">
+                    <a id="bas_de_page"></a>
+                    <a href="#haut_de_page" title="MiniSite : le haut de la page" ><i class="far fa-arrow-alt-circle-up"></i></a>
+                </p>
             </div><!-- fermeture de la div main -->
             <!-- cette div permet de reprendre le flux normal -->
             <div class="clear"></div>
